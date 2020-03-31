@@ -1,5 +1,59 @@
+html {
+  font-size: 24px;
+}
+
 body {
   font-family: Montserrat, sans-serif;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
+  background-color: rgba(255, 171, 15, 0.2);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  line-height: 2;
 }
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.form * {
+  margin: .2rem;
+}
+
+.span {
+  grid-column: span 2;
+}
+
+input, select {
+  font-family: Montserrat, sans-serif;
+  font-size: 1rem;
+  border-radius: .5rem;
+  border: 1px solid #6b6b6b;
+  padding: .5rem;
+}
+
+.button {
+  margin: 1.5rem;
+  font-weight: 900;
+  background: hsl(39, 100%, 53%);
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 9px hsl(39, 100%, 40%);
+  outline: none;
+}
+
+.button:hover {
+  background: hsl(39, 100%, 48%);
+}
+
+.button:active {
+  background: hsl(39, 100%, 48%);
+  box-shadow: 0 5px hsl(39, 100%, 40%);
+  transform: translateY(4px);
+}
+
