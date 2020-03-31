@@ -75,3 +75,26 @@ a {
 a:hover {
   color: hsl(39, 100%, 40%);
 }
+
+
+section {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+.wiggle {
+  padding: .5rem;
+  font-size: 2rem;
+  animation: wiggle 2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wiggle {
+  0% {transform: rotate(20deg)}
+  50% {transform: rotate(-20deg)}
+  100% {transform: rotate(20deg)}
+}
